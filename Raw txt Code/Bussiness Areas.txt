@@ -1,0 +1,69 @@
+1. Working Categoires out that can be selected.
+
+3. Check Categoires for double 
+
+2. every attribute is a own categorie they do not follow a order.
+
+
+
+Data Aggregation
+Analytics
+Portfolio Reporting
+Enterprise Architecture
+Process Automation
+Business Process Management
+Ideation
+Audit
+Compliance
+Integration
+Risk Management
+Compliance
+Security
+Regulation
+Audit
+Capital Raising
+Sourcing & Execution
+Investment Management
+Back Office
+Investment Management
+Identify and validate data
+Data preparation
+Machine learning for data verification
+and signal identification
+Data Sourcing
+Data Mastering
+Data Quality
+Data Access
+Data Distribution
+Data Analytics
+Process Automation
+Performance attribution
+Convert spreadsheets into ready-to-integrate APIs
+Centralize, secure and audit businesslogic
+Automate complex modeling, testing and business impact simulation
+Cash Management
+Transaction Reporting
+Regulatory Reporting
+Alternative investments
+Data Migration
+Automation
+User-defined Technologies
+Regulatory
+Compliance
+Reconciliation
+Fund Administration
+Data storage
+Financial record keeping
+Portfolio Management
+Data Distribution
+Natural Language Processing (NLP)
+Generative AI
+Machine Learning
+Data Storage
+Data Management
+Automation
+Portfolio Manager
+Trader
+Operations
+Compliance
+Risk

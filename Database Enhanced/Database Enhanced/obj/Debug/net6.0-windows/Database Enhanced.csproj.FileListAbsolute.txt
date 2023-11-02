@@ -1,0 +1,16 @@
+D:\Software Engenieering\Database Enhanced\Database Enhanced\bin\Debug\net6.0-windows\Database Enhanced.exe
+D:\Software Engenieering\Database Enhanced\Database Enhanced\bin\Debug\net6.0-windows\Database Enhanced.deps.json
+D:\Software Engenieering\Database Enhanced\Database Enhanced\bin\Debug\net6.0-windows\Database Enhanced.runtimeconfig.json
+D:\Software Engenieering\Database Enhanced\Database Enhanced\bin\Debug\net6.0-windows\Database Enhanced.dll
+D:\Software Engenieering\Database Enhanced\Database Enhanced\bin\Debug\net6.0-windows\Database Enhanced.pdb
+D:\Software Engenieering\Database Enhanced\Database Enhanced\obj\Debug\net6.0-windows\Database_Enhanced.Form1.resources
+D:\Software Engenieering\Database Enhanced\Database Enhanced\obj\Debug\net6.0-windows\Database Enhanced.csproj.GenerateResource.cache
+D:\Software Engenieering\Database Enhanced\Database Enhanced\obj\Debug\net6.0-windows\Database Enhanced.GeneratedMSBuildEditorConfig.editorconfig
+D:\Software Engenieering\Database Enhanced\Database Enhanced\obj\Debug\net6.0-windows\Database Enhanced.AssemblyInfoInputs.cache
+D:\Software Engenieering\Database Enhanced\Database Enhanced\obj\Debug\net6.0-windows\Database Enhanced.AssemblyInfo.cs
+D:\Software Engenieering\Database Enhanced\Database Enhanced\obj\Debug\net6.0-windows\Database Enhanced.csproj.CoreCompileInputs.cache
+D:\Software Engenieering\Database Enhanced\Database Enhanced\obj\Debug\net6.0-windows\Database Enhanced.dll
+D:\Software Engenieering\Database Enhanced\Database Enhanced\obj\Debug\net6.0-windows\refint\Database Enhanced.dll
+D:\Software Engenieering\Database Enhanced\Database Enhanced\obj\Debug\net6.0-windows\Database Enhanced.pdb
+D:\Software Engenieering\Database Enhanced\Database Enhanced\obj\Debug\net6.0-windows\Database Enhanced.genruntimeconfig.cache
+D:\Software Engenieering\Database Enhanced\Database Enhanced\obj\Debug\net6.0-windows\ref\Database Enhanced.dll

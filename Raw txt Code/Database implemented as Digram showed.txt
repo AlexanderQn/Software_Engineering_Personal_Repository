@@ -1,0 +1,296 @@
+CREATE TABLE [dbo].[Login_Table]
+(
+    [User_ID] INT NOT NULL PRIMARY KEY INDENTITY,
+    [Username] NVARCHAR(50) NOT NULL,
+    [Password] NVARCHAR(50) NOT NULL,
+    [User_Privileges] NVARCHAR(50) NOT NULL,
+    [Email] NVARCHAR(50) NOT NULL,
+)
+----------------------------------------------
+
+
+----------------------------------------------
+CREATE TABLE [dbo].[Companies]
+(
+    [Company_ID]          INT            IDENTITY (1, 1) NOT NULL,
+    [Company_Name]        NVARCHAR (50)  NOT NULL,
+    [Company_Website]     NVARCHAR (50)  NOT NULL,
+    [Company_Established] NVARCHAR (100) NOT NULL,
+    [No._Employees]       NVARCHAR (50)  NOT NULL,
+    [IPS]                 NVARCHAR (50)  NOT NULL,
+    [Last_Demo_Date]      NVARCHAR (50)  NULL,
+    [Last_Review_Date]    NVARCHAR (50)  NULL,
+)
+
+SET IDENTITY_INSERT [dbo].[Companies] ON
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (1, N'ADDEPAR, INC.', N'https://addepar.com/', N'2009', N'501 - 1,000', N'No', N'18/01/2023', N'18/01/2023')
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (2, N'BOC Group', N'https://www.boc-group.com/en/adoit/', N'1995', N'501 - 1,000', N'Yes', N'No Demo', N'03/08/2023')
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (3, N'Allvue', N'https://www.allvuesystems.com/', N'2007', N'101-250', N'Yes', N'08/02/2023', N'08/02/2023')
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (4, N'AltHub', N'https://althub.com/', N'2017', N'11-50', N'Yes', N'23/02/2023', N'23/02/2023')
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (5, N'Alveo', N'https://www.alveotech.com/', N'1991', N'11-50', N'Yes', N'07/03/2023', N'13/07/2023')
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (6, N'Appian', N'https://appian.com/', N'2016', N'1,000+', N'No', N'05/04/2023', N'05/04/2023')
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (7, N'CloudAttribution', N'https://www.cloudattribution.com', N'2012', N'51 - 100', N'No', N'16/06/2023', N'16/06/2023')
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (8, N'Coherent Global', N'https://www.coherent.global', N'2017', N'101 - 250', N'Yes', N'02/08/2023', N'02/08/2023')
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (9, N'Du.Co', N'https://du.co/', N'2010', N'101 - 250', N'No', N'No Demo', N'04/05/2023')
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (10, N'Dynamo Software', N'https://www.dynamosoftware.com/', N'1998', N'51 - 100', N'No', N'05/07/2023', N'05/07/2023')
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (11, N'Ezops', N'https://www.ezops.com/', N'2014', N'101 - 250', N'No', N'31/05/2023', N'21/07/2023')
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (12, N'Finbourne Technology', N'https://www.finbourne.com/', N'2016', N'101-250', N'Yes', N'05/08/2023', N'05/08/2023')
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (13, N'Freyda', N'https://freyda.io/', N'2018', N'1-10', N'No', N'02/12/2022', N'02/12/2022')
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (14, N'IBM', N'https://www.ibm.com/watsonx', N'2023', N'1,000+', N'Yes', N'10/08/2023', N'10/08/2023')
+INSERT INTO [dbo].[Companies] ([Company_ID], [Company_Name], [Company_Website], [Company_Established], [No._Employees], [IPS], [Last_Demo_Date], [Last_Review_Date]) VALUES (15, N'Limina', N'https://www.limina.com', N'2014', N'11-50', N'No', N'16/11/2022', N'16/11/2022')
+SET IDENTITY_INSERT [dbo].[Companies] OFF
+
+----------------------------------------------
+
+
+----------------------------------------------
+CREATE TABLE [dbo].[Companies_Locations]
+(
+    [Location_ID]      INT            IDENTITY (1, 1) NOT NULL,
+FK  [Company_ID]       INT            NOT NULL,
+    [Location_Country] NVARCHAR (50)  NOT NULL,
+    [Location_City]    NVARCHAR (50)  NULL,
+    [Telephone_No.]    NVARCHAR (50)  NULL,
+    [Address]          NVARCHAR (200) NULL,
+    CONSTRAINT [FK1_Company_ID] FOREIGN KEY ([Company_ID]) REFERENCES [dbo].[Companies] ([Company_ID])
+)
+
+SET IDENTITY_INSERT [dbo].[Companies_Locations] ON
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (1, 1, N'United States of America', N'Mountain View', N'+1 855 464 6268', N'787 Castro St. Mountain View, CA 94041')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (2, 1, N'United States of America', N'New York City', NULL, N'335 Madison Ave, 25th floor, New York, NY 10017')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (3, 1, N'United States of America', N'Chicago', NULL, N'167, Green Street, Chicago IL 60607')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (4, 1, N'United States of America', N'Salt lake City', NULL, N'460 West 50 North, Suite 125 Salt Lake Citiy, UT 84101')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (5, 1, N'Ireland', N'Dublin', NULL, N'10 Ely Place, Dublin 2 D02 HR98')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (6, 1, N'United Kingdom', N'Edinburgh', NULL, N'80 Geporge Street Office, 01-101, Edinburgh, EH2 3BU')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (7, 1, N'United Kingdom', N'London', NULL, N'23 Bedford Square (1st Floor) London, WC1B 3HH')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (8, 1, N'India', N'Pune', NULL, N'10th Floor, Fountainhead Tower 1, Viman Nagar, Pune 411014')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (9, 2, N'Austria', N'Wiene', N'+43 1 9051081 0', N'Operngasse 20b 1040 Wien')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (10, 2, N'France', N'Paris', N'+33 1 5324 53 83', N'5 Rue du Helder 75009 Paris')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (11, 2, N'Germany', N'Berlin', N'+49 30 226925 10', N'Naglerstrabe 5 10245 Berlin')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (12, 2, N'Greece', N'Chalikida', N'+30 222 1308676', N'4, Dimarxou Sarafianou Street 34100, Chalkida, Evia')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (13, 2, N'Ireland', N'Dublin', N'+353 1 287 01 29', N'21 Priory Ofice Park, Stillorgan, Bunlin A94 F660')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (14, 2, N'Poland', N'Warsaw', N'+48 22 628 00 15', N'1. Panska 96 lok. 59 00-837 Warsaw')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (15, 2, N'Spain', N'Madrid', N'+34 91 781 18 80', N'Iberica, S.L.U. Velazquez, 71 28006 Madrid')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (16, 2, N'Switzerland', N'Winterthur', N'+41 52260375 0', N'Zurcherstrasse 21 8400 Winterthur')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (17, 3, N'United States of America', N'Miami', N'+1 305 901 7060', N'396 Alhambra Circle, 11th Floor, Coral Gables, FL 33134')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (18, 3, N'United States of America', N'Chicago', Null, N'200 W Monroe, #1330, Chicago, IL 60606')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (19, 3, N'United States of America', N'New York', Null, N'1407 Broadway, 36th Floor, New York, NY 10018')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (20, 3, N'United States of America', N'San Diego', Null, N'12526 High Bluff Drive, Suite 160, San Diego, CA 92130')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (21, 3, N'United Kingdom', N'London', N'+44 207 154 1010', N'Becket House, 7th Floor, 36 Old Jewry, London EC2R 8DD')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (22, 3, N'Poland', N'Krakow', Null, N'Fabryczna Office Park, Building 1, 8th Floor, aleja Pokoju, 18, 31-564 Krakow')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (23, 4, N'United States of America', N'New York', N'+1 646 665 4990', N'35 Madison Ave, New York, NY10016')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (24, 5, N'United States of America', N'New York', N'+1 212 445 1076', N'1350 Broadway, Suite 1530, New York, NY 10018');
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (25, 5, N'United Kingdom', N'London', Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (26, 5, N'Singapore', N'Singapore', Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (27, 5, N'Netherlands', N'Herenveen', Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (28, 6, N'United States of America', N'McLean', N'+1 703 442 8844', N'7950 Jones Branch Dr., McLean, VA 22102')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (29, 6, N'Canada', Null, Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (30, 6, N'Mexico', Null, Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (31, 6, N'United Kingdom', N'London', N'+44 203 514 2838', N'20 Fenchurch Street, 25th Floor, London EC3M 3BY')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (32, 6, N'Netherlands', Null, Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (33, 6, N'France', Null, Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (34, 6, N'Germany', Null, Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (35, 6, N'Italy', Null, Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (36, 6, N'Jordan', Null, Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (37, 6, N'Spain', Null, Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (38, 6, N'Sweden', Null, Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (39, 6, N'Switzerland', Null, Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (40, 6, N'Australia', N'Sydney', N'+61 2 8317 6698', N'25 Martin Place, Sydney New South Wales, 2000 Australia')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (41, 6, N'Singapore', Null, Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (42, 6, N'Japan', Null, Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (43, 6, N'India', Null, Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (44, 7, N'United Kingdom', N'London', N'+442045265821', N' Thornton House, Thornton Road, Wimbledon, London SW19 4NG')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (45, 7, N'United States of America', N'Chicago', Null, N'One Lincoln Center 18W140 Butterfield Road Oakbrook Terrace, Suite 1500 Oak Brook, Illinois, 60181 USA')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (46, 8, N'United States of America', N'New York', Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (47, 8, N'United States of America', N'Miami', Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (48, 8, N'United Kingdom', N'London', N'+442045265821', N'Thornton House')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (49, 8, N'Hong Kong', N'Hong Kong', Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (50, 8, N'Australia', N'Sydney', Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (51, 8, N'Japana', N'Tokyo', Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (52, 8, N'Philippines', N'Manila', Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (53, 8, N'South Africa', N'Johannesburg', Null, Null)
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (54, 9, N'United Kingdom', N'London', N'+442031119294', N'49 Clerkenwell Green,London, EC1R 0EB')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (55, 9, N'Singapore', N'Singapore', N'+6568170494', N'WeWorks c/o Duco Technology, CityHouse, 36 Robinson Road, Singapore 068877')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (56, 9, N'United States of America', N'New York', N'+12123536541', N'9 East 40th Street, Floor 6, New York, NY 10016')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (57, 9, N'United States of America', N'Boston', N'+12123536541', N'49 Clerkenwell Green,London, EC1R 0EB')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (58, 9, N'Poland', N'Wroclaw', N'+48718814546', N'ul. Marii Curie Skłodowskiej 12 50-381 Wrocław')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (59, 10, N'United States of America', N'Watertown', N'+1 866 439 6266', N' 480 Pleasant Street, Suite B200, Watertown, MA 02472')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (60, 10, N'Bulgaria', N'Sofia', N'+359 2 960 6939', N'Krastova Vada District, 14 Filip Kutev Street, Floor 5, 1407 Sofia')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (61, 10, N'United Kingdom', N'London', N'+44 203 743 8849', N'40 Gracechurch Street, London EC3V 0BT')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (62, 10, N'Singapore', N'Singapore', N'+65 6681 6736', N'21 Collyer Quay, #02-01 Singapore 049320')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (63, 10, N'Hong Kong', N'Hong Kong', N'+852 3653 5398', N'1102, 11/F, 90 Connaught Road Central, Sheung Wan, Hong Kong')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (64, 11, N'United States of America', N'San Fransisco', NULL, N'717 Market St #100, San Francisco')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (65, 11, N'United States of America', N'New York', N'+1 212 739 7345', N'463 7th Avenue, #1504, New York, NY 10018')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (66, 11, N'United States of America', N'New Brunswick', NULL, N'21 Collyer Quay, #02-01 Singapore 049320')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (67, 11, N'United States of America', N'New Jersey', NULL, N'21 Collyer Quay, #02-01 Singapore 049320')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (68, 11, N'Ireland', N'Dublin', NULL, N'2 Dublin Landings, Dublin Docklands, Dublin')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (69, 11, N'India', N'Noida',  NULL, N'2 Dublin Landings, Dublin Docklands, Dublin')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (70, 12, N'United Kingdom', N'London', N'+44 203 880 1307', N'1 Carter Lane, London, England, EC4V 5ER')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (71, 12, N'United States of America', N'New York', NULL, N'Industrious Bryant Park off Fifth, 25 W 39th st, 7th Floor, New York, 10018')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (72, 12, N'Singapore', N'Singapore', NULL, N'790, Level 7 Capital Square, 23 Church Street, Singapore, 049481')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (73, 13, N'United Kingdom', N'Bristol', N'Online only', N'Suite 9, Westbury Court Church Road, Westbury-On-Trym, Bristol, BS9 3EF')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (74, 14, N'United States of America', N'Armonk', N'+1 914 499 1900', N'1 New orchard, Rd, Armonk, NY 10504')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (75, 14, N'United Kingdom', N'London', N'+44 203 397 3350', N'15Th Floor, Wework, 10 York Rd, London SE1 7ND')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (76, 15, N'Sweden', N'Stockholm', N'+46 8 128 743 01', N'Kungsgatan 64, 111 22')
+INSERT INTO [dbo].[Companies_Locations] ([Location_ID], [Company_ID], [Location_Country], [Location_City], [Telephone_No.], [Address]) VALUES (77, 15, N'United Kingdom', N'London', N'+44 20 8142 7457', N'No. 1 Poultry, London, EC2R 8EJ')
+SET IDENTITY_INSERT [dbo].[Companies_Locations] OFF
+----------------------------------------------
+
+
+----------------------------------------------
+CREATE TABLE [dbo].[Products]
+
+    [Product_ID]    INT            IDENTITY (1, 1) NOT NULL,
+FK  [Company_ID]    INT            NOT NULL,
+    [Software_Name] NVARCHAR (50)  NOT NULL,
+    [Software_Type] NVARCHAR (50)  NOT NULL,
+    [Description]   NVARCHAR (500) NOT NULL,
+    CONSTRAINT [FK2_Company_ID] FOREIGN KEY ([Company_ID]) REFERENCES [dbo].[Companies] ([Company_ID])
+)
+
+SET IDENTITY_INSERT [dbo].[Products] ON
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (1, 1, N'ADDEPAR', N'Wealth Management', N'An American wealth management platform for registered investment advisors, specializing in data aggregation, analytics, and portfolioreporting.')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (2, 2, N'ADOIT', N'Enterprise Architecture', N'ADOIT is an enterprise architecture management tool that provides functionalities and methods for enterprise analysis, design, planning, and implementation. The platform supports alignment and improvement of dependencies between business and IT as well as manages and analyses the dependencies between different organizational assets.')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (3, 2, N'ADONIS', N'Business Process Management', N'a Business Process Management (BPM) tool, used for documentation, analysis, and optimization of business processes. It enables the visualization of process flows and standard operating procedures (SOPs), provides visibility into how they operate, and helps increase their efficiency by revealing redundant efforts and opportunities for improvement.')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (4, 2, N'ADOGRC', N'Governance', N'Governance, risk, control and compliance suite.')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (5, 3, N'Allvue', N'Alternative investment', N'Allvue Systems is a leading provider of investment management solutions for fund managers, investors, and administrators in the alternative investments industry')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (6, 4, N'Invisage', N'Data Transformation Alternative Investments', N'Enhance and transform raw data into ready-to-use products for investment and corporate users.  Uses machine learning to test various use cases, generate signals and verify the insights of the data.  Built as a sales enablement platform, AltHub supports all sales and marketing workflows while elevating the presentation of data.')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (7, 5, N'Alveo', N'Data Management', N'Cloud-based market data integration, reference data, analytics and Data-as-a-Service solutions for financial services.')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (8, 6, N'Appian', N'Process Automation', N'Build applications and workflows rapidly, with a low-code automation platform, utilising AI. ')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (9, 7, N'CloudAttribution', N'Performance', N'Cloud-based performance attribution reporting system for fixed income and multi-asset portfolios.')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (10, 8, N'SPARK', N'Data Management, Data Transformation', N'Spark is a cloud-based logic engine that converts complex business logic from Excel models into APIs.')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (11, 9, N'Du.Co', N'Data Management', N'No code data preparation, consolidation, reconciliation and distribution')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (12, 10, N'Dynamo', N'Alternative Investment', N'Alternative investments investment management platform for both GPs and LPs.')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (13, 11, N'EZOPS ARO', N'Data Transformation', N'Low code data transformation, reconciliations, predictive analytics, anomaly detection, workflow management, IPA Bots, and reporting.')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (14, 12, N'Finbourne', N'Data Management', N'Offering global investment management, banking and capital markets firms an interoperable approach to data management by providing a consolidated and trusted view of your financial data across the front, middle and back office on the cloud.')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (15, 13, N'Freyda', N'Data Transformation', N'A cloud-based solution helping financial institutions to process, interpret and analyse data from their documents. using machine learning, natural language processing and artificial intelligence to help organizations transform unstructured data from documents into actionable insight.')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (16, 14, N'IBM watsonX', N'Artificial Intelligence', N'watsonx is an AI and data platform with a set of AI assistants designed to help scale and accelerate the impact of AI with trusted data across the business.')
+INSERT INTO [dbo].[Products] ([Product_ID], [Company_ID], [Software_Name], [Software_Type], [Description]) VALUES (17, 15, N'Limina IMS', N'Portfolio Management Trading ', N'Limina IMS is a cross-asset investment management platform that includes an OMS and a real-time IBOR that provides a real-time view of data (current, forward-looking and historical).')
+SET IDENTITY_INSERT [dbo].[Products] OFF
+----------------------------------------------
+
+
+----------------------------------------------
+CREATE TABLE [dbo].[Products_Capability_Table] (
+    [Capability_ID]   INT             IDENTITY (1, 1) NOT NULL,
+FK  [Product_ID]      INT             NOT NULL,
+    [Cloud]           NVARCHAR (50)   NOT NULL,
+    [Additional_Info] NVARCHAR (1000) NULL,
+    [Attachment]      NVARCHAR (50)   NULL,
+    CONSTRAINT [FK_Product_ID] FOREIGN KEY ([Product_ID]) REFERENCES [dbo].[Products] ([Product_ID])
+)
+
+SET IDENTITY_INSERT [dbo].[Products_Capability_Table] ON
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (1, 1, N'Cloud Based', N'Addepar software facilitates both visualizing an investment portfolios exposures at the individual asset class and also tabulating the portfolios total value according to real time value of the assets under management. In September 2016, Salesforce.com announced their partnership with Addepar for Salesforces Wave Financial Services Cloud for financial advisers, making it easier to see across asset classes and produce a single visual for their clients.', N'No')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (2, 2, N'Cloud Enabled', N'Gartner Magic Quadrant Leader in EA 2022. ADOIT is based on various international standards such as TOGAF, ArchiMate, ITIL, and COBIT. It is ArchiMate 3.1 and TOGAF-9 certified. ADOIT is used for the optimization of enterprise architectures. It covers a wide application field from the establishment of EA know-how, the definition and implementation of architectural principles, the establishment of business capability management, installation of compliance and IT risk management, to the integration of process management initiatives.', N'No')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (3, 2, N'Cloud Enabled', N'ADONIS is designed as a golden source of organizations process data, and thus supports the end-to-end management and improvement of their business processes.[1] It is an HTML 5 web-based application, fully BPMN 2.0 compliant, and conformant with various other international standards and best practices such as BPMM, DMN and ISO 9000.', N'No')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (4, 2, N'Cloud Enabled', NULL, N'No')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (5, 3, N'Cloud Based', NULL, N'No')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (7, 5, N'Cloud Native', NULL, N'No')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (7, 5, N'Cloud Native', NULL, N'No')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (8, 6, N'Cloud Native', N'low-code application development, digital process automation (DPA), intelligent business process management systems (iBPMS), and dynamic case management (DCM).', N'No')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (9, 7, N'Cloud Native', N'Strategy tagging, Transaction-based tagging, PDF reporting, Excel Reporting, APIs to pull data', N'Yes')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (10, 8, N'Cloud Enabled', N'Can separate data and logic, either maintain ss as input or take data from another source and then compute. Can be desk top based in ss or into another system (i.e. data from snowflake, transformed by coherent, and into PowerBI) - any changes made in spark will also feed into the excel sheet (every upload ss is stored, auditable, reviewed  -can also go back and restore a previous version) Shell is an exact replica of the excel ss - but in SPARK, multiple users on the same version of SS, permissions based access. Can then be confirmed to pull data directly from source and not ss,  data can then be published out to a warehouse/ powerbi/ another system (can also track what source was entered into that destination - either straight through or maker/checker process) 3) can create a form sheet with inputs from ss and logic and then replace ss altogether. Once  in the system can track how many times a ss is accessed and used', N'No')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (11, 9, N'Cloud Enabled', NULL, N'No')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (12, 10, N'Cloud Enabled', NULL, N'Yes')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (13, 11, N'Cloud Native', NULL, N'Yes')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (14, 12, N'Cloud Native', N'Citisoft has done a round table with Finbourne in Copenhagen and will be doing another one in London.', N'Yes')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (15, 13, N'Cloud Native', N'Partnership with LemonEdge and ECI. Received backing from the Google for Startups Black Founders Fund in 2021.', N'No')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (16, 14, N'Cloud Native', NULL, N'Yes')
+INSERT INTO [dbo].[Products_Capability_Table] ([Capability_ID], [Product_ID], [Cloud], [Additional_Info], [Attachment]) VALUES (17, 15, N'Cloud Native', N'Designed for institutional investment managers to fit governance processes and oversight requirements, while still reaping the benefits of true cloud. Open platform that integrates with your existing ecosystem of service providers and technologies. Founded by investment management professionals.', N'No')
+SET IDENTITY_INSERT [dbo].[Products_Capability_Table] OFF
+----------------------------------------------
+
+
+----------------------------------------------
+CREATE TABLE [dbo].[Modules_Table] (
+    [Module_ID]     INT            IDENTITY (1, 1) NOT NULL,
+FK  [Capability_ID] INT            NOT NULL,
+    [Module]        NVARCHAR (500) NOT NULL,
+    CONSTRAINT [FK1_Capability_ID] FOREIGN KEY ([Capability_ID]) REFERENCES [dbo].[Products_Capability_Table] ([Capability_ID])
+)
+
+
+
+SET IDENTITY_INSERT [dbo].[Modules_Table] ON
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (1, 1, N'Addepar')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (2, 2, N'Enterprise Architecture Suite')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (3, 3, N'Business Process Management')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (4, 4, N'Risk Management, Compliance & Policy Management, Information Security Management System, General Data Protection Regulation, Internal Revision & Audit Management')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (5, 5, N'Pipeline Management, Research Management, Trade Order Management, Compliance, Portfolio Management, Fund Performance & Portfolio Monitoring, Performance Attribution, Fund Finance, Business Intelligence, Fund Accounting, Investment Accounting, Corporate Accounting, Investor Portal, Asset Servicing, Equity Essentials, Private Equity Essentials, Venture Capital Essentials')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (6, 6, N'Invisage Platform')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (7, 7, N'Market Data in the cloud, Data Management & Analytics, Risk Data Management, Reference Data Management, ESG Data Management, Independent Valuation, Regulatory Repoting')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (8, 8, N'Appian Platform')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (9, 9, N'Reporting and Analysis tool (Report Hub), Passive Investment Attribution tool')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (10, 10, N'SPARK')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (11, 11, N'Duco Platform, Data Prep, Data Reconciliaiton')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (12, 12, N'CRM & deal management, Investor relations, Fundraising & Marketing, Portfolio Monitoring & Valuation, Fund Accounting, Research Management, Portfolio Management, Data Automation, HoldingsInsight, Investor Portal, ESG')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (13, 13, N'Data Modeler, Data Reconciliation, Curie Prediction, Intelligent Process Automation, Insights')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (14, 14, N'LUSID - Operational Data Store (ODS), LUSID - IBOR & ABOR, LUSID - Portfolio Management (PMS), Luminesce - Data Virtualisation')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (15, 15, N'Data Extraction, Search Engine, Data Approval, Dashboard, Analytics, Data Export')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (16, 16, N'watsonx.ai, watsonx.data, watson.governance, watsonx Orchestrate, watsonx Assistant, watsonx Code Assistant')
+INSERT INTO [dbo].[Modules_Table] ([Module_ID], [Capability_ID], [Module]) VALUES (17, 17, N'OMS/Front Office, Investment & Portfolio Risk Management, Investment Book of Record (IBOR), Data Management')
+SET IDENTITY_INSERT [dbo].[Modules_Table] OFF
+----------------------------------------------
+
+
+----------------------------------------------
+CREATE TABLE [dbo].[Business Areas Table] (
+    [Areas_ID]      INT             IDENTITY (1, 1) NOT NULL,
+FK  [Capability_ID] INT             NOT NULL,
+    [Business_Area] NVARCHAR (1000) NOT NULL,
+    CONSTRAINT [FK2_Capability_ID] FOREIGN KEY ([Capability_ID]) REFERENCES [dbo].[Products_Capability_Table] ([Capability_ID])
+);
+
+SET IDENTITY_INSERT [dbo].[Business Areas Table] ON
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (1, 1, N'Data Aggregation, Analytics, Portfolio Reporting')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (2, 2, N'Enterprise Architecture')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (3, 3, N'Process Automation, Business Process Management, Ideation, Audit, Compliance, Integration')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (4, 4, N'Risk Management, Compliance, Security, Regulation, Audit')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (5, 5, N'Capital Raising, Sourcing & Execution, Investment Management, Back Office, Investment Management')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (6, 6, N'Identify and validate data, Data preparation, Machine learning for data verification and signal identification')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (7, 7, N'Data Sourcing, Data Mastering, Data Quality, Data Access, Data Distribution, Data Analytics')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (8, 8, N'Process Automation')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (9, 9, N'Performance attribution')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (10, 10, N'Convert spreadsheets into ready-to-integrate APIs, Centralize, secure and audit business logic, Automate complex modeling, testing and business impact simulation')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (11, 11, N'Cash Management, Transaction Reporting, Regulatory Reporting')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (12, 12, N'Alternative investments')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (13, 13, N'Data Migration, Automation, User-defined Technologies, Regulatory, Compliance, Reconciliation, Fund Administration')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (14, 14, N'Data storage, Financial record keeping, Portfolio Management, Data Distribution')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (15, 15, N'Natural Language Processing (NLP)')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (16, 16, N'Generative AI, Machine Learning, Data Storage, Data Management, Automation')
+INSERT INTO [dbo].[Business Areas Table] ([Areas_ID], [Capability_ID], [Business_Area]) VALUES (17, 17, N'Portfolio Manager, Trader, Operations, Compliance, Risk')
+SET IDENTITY_INSERT [dbo].[Business Areas Table] OFF
+----------------------------------------------
+
+
+----------------------------------------------
+CREATE TABLE [dbo].[Client_Types_Table] (
+    [Client_Types_ID] INT            IDENTITY (1, 1) NOT NULL,
+FK  [Capability_ID]   INT            NOT NULL,
+    [Client_Type]     NVARCHAR (150) NOT NULL,
+    CONSTRAINT [FK3_Capability_ID] FOREIGN KEY ([Capability_ID]) REFERENCES [dbo].[Products_Capability_Table] ([Capability_ID])
+)
+
+
+
+SET IDENTITY_INSERT [dbo].[Client_Types_Table] ON
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (1, 1, N'Wealth Management, Family Offices, Broker Dealers')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (2, 2, NULL)
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (3, 3, N'Asset Management, Investment Banks')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (4, 4, N'Asset Management, Investment Banks')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (5, 5, N'Alternative Asset Managers, Fund Administrators, Retail Banking, Insurance, Family Office')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (6, 6, N'Alternative Asset Managers')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (7, 7, N'Retail Banking, Asset Managers, Insurance Companies, Central Banks, Clearing Houses')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (8, 8, N'Wealth Management, Asset Management, Retail Banking, Investment Banking')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (9, 9, N'Asset Management')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (10, 10, N'Insurance, Retail Banking, Asset Management')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (11, 11, N'Investment Banking, Insurance, FinTech')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (12, 12, N'Alternative Asset Managers, Asset Managers, Service Providers')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (13, 13, N'Investment Banking, Asset Management, Service Proviers, Custodians, Retail Banking, Insurance, Corporate Treasury, Fund Administration')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (14, 14, N'Alternative Asset Managers, Asset Management, Service Providers, Retail Banking, Investment Banking')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (15, 15, N'Alternative Asset Managers, Asset Management, Fund Administrators')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (16, 16, N'Investment Banking, Asset Management, Service Proviers, Custodians, Retail Banking, Insurance, Corporate Treasury, Fund Administration')
+INSERT INTO [dbo].[Client_Types] ([Client_Types_ID], [Capability_ID], [Client_Type]) VALUES (17, 17, N'Asset Management')
+SET IDENTITY_INSERT [dbo].[Client_Types] OFF
+----------------------------------------------
