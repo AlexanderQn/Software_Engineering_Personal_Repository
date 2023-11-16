@@ -1,0 +1,48 @@
+D:\Software Engenieering\Database\Database\bin\Debug\MarketDB.mdf
+D:\Software Engenieering\Database\Database\bin\Debug\MarketDB_log.ldf
+D:\Software Engenieering\Database\Database\bin\Debug\Database.exe.config
+D:\Software Engenieering\Database\Database\bin\Debug\Database.exe
+D:\Software Engenieering\Database\Database\bin\Debug\Database.pdb
+D:\Software Engenieering\Database\Database\obj\Debug\Software Engenieering Project.csproj.AssemblyReference.cache
+D:\Software Engenieering\Database\Database\obj\Debug\Database.Properties.Resources.resources
+D:\Software Engenieering\Database\Database\obj\Debug\Software Engenieering Project.csproj.GenerateResource.cache
+D:\Software Engenieering\Database\Database\obj\Debug\Software Engenieering Project.csproj.CoreCompileInputs.cache
+D:\Software Engenieering\Database\Database\obj\Debug\Database.exe
+D:\Software Engenieering\Database\Database\obj\Debug\Database.pdb
+D:\Software Engenieering\Database\Database\obj\Debug\Software_Engenieering_Project.Main_Menu.resources
+D:\Software Engenieering\Software Engenieering Project\Database\bin\Debug\MarketDB.mdf
+D:\Software Engenieering\Software Engenieering Project\Database\bin\Debug\MarketDB_log.ldf
+D:\Software Engenieering\Software Engenieering Project\Database\bin\Debug\Database.exe.config
+D:\Software Engenieering\Software Engenieering Project\Database\bin\Debug\Database.exe
+D:\Software Engenieering\Software Engenieering Project\Database\bin\Debug\Database.pdb
+D:\Software Engenieering\Software Engenieering Project\Database\obj\Debug\Software Engenieering Project.csproj.AssemblyReference.cache
+D:\Software Engenieering\Software Engenieering Project\Database\obj\Debug\Software_Engenieering_Project.Main_Menu.resources
+D:\Software Engenieering\Software Engenieering Project\Database\obj\Debug\Database.Properties.Resources.resources
+D:\Software Engenieering\Software Engenieering Project\Database\obj\Debug\Software Engenieering Project.csproj.GenerateResource.cache
+D:\Software Engenieering\Software Engenieering Project\Database\obj\Debug\Software Engenieering Project.csproj.CoreCompileInputs.cache
+D:\Software Engenieering\Software Engenieering Project\Database\obj\Debug\Database.exe
+D:\Software Engenieering\Software Engenieering Project\Database\obj\Debug\Database.pdb
+G:\Software Engenieering\Software Engenieering Project\Database\bin\Debug\MarketDB.mdf
+G:\Software Engenieering\Software Engenieering Project\Database\bin\Debug\MarketDB_log.ldf
+G:\Software Engenieering\Software Engenieering Project\Database\bin\Debug\Database.exe.config
+G:\Software Engenieering\Software Engenieering Project\Database\bin\Debug\Database.exe
+G:\Software Engenieering\Software Engenieering Project\Database\bin\Debug\Database.pdb
+G:\Software Engenieering\Software Engenieering Project\Database\obj\Debug\Software Engenieering Project.csproj.AssemblyReference.cache
+G:\Software Engenieering\Software Engenieering Project\Database\obj\Debug\Software_Engenieering_Project.Main_Menu.resources
+G:\Software Engenieering\Software Engenieering Project\Database\obj\Debug\Database.Properties.Resources.resources
+G:\Software Engenieering\Software Engenieering Project\Database\obj\Debug\Software Engenieering Project.csproj.GenerateResource.cache
+G:\Software Engenieering\Software Engenieering Project\Database\obj\Debug\Software Engenieering Project.csproj.CoreCompileInputs.cache
+G:\Software Engenieering\Software Engenieering Project\Database\obj\Debug\Database.exe
+G:\Software Engenieering\Software Engenieering Project\Database\obj\Debug\Database.pdb
+D:\1 Software Engenieering\Software Engenieering Project\Database\bin\Debug\MarketDB.mdf
+D:\1 Software Engenieering\Software Engenieering Project\Database\bin\Debug\MarketDB_log.ldf
+D:\1 Software Engenieering\Software Engenieering Project\Database\bin\Debug\Database.exe.config
+D:\1 Software Engenieering\Software Engenieering Project\Database\bin\Debug\Database.exe
+D:\1 Software Engenieering\Software Engenieering Project\Database\bin\Debug\Database.pdb
+D:\1 Software Engenieering\Software Engenieering Project\Database\obj\Debug\Software Engenieering Project.csproj.AssemblyReference.cache
+D:\1 Software Engenieering\Software Engenieering Project\Database\obj\Debug\Software_Engenieering_Project.Main_Menu.resources
+D:\1 Software Engenieering\Software Engenieering Project\Database\obj\Debug\Database.Properties.Resources.resources
+D:\1 Software Engenieering\Software Engenieering Project\Database\obj\Debug\Software Engenieering Project.csproj.GenerateResource.cache
+D:\1 Software Engenieering\Software Engenieering Project\Database\obj\Debug\Software Engenieering Project.csproj.CoreCompileInputs.cache
+D:\1 Software Engenieering\Software Engenieering Project\Database\obj\Debug\Database.exe
+D:\1 Software Engenieering\Software Engenieering Project\Database\obj\Debug\Database.pdb
