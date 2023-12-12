@@ -132,6 +132,7 @@
             this.Controls.Add(this.btnopen);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "frmVendor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

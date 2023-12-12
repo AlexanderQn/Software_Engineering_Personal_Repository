@@ -12,7 +12,6 @@ namespace Software_Development_Project
 {
     public partial class Login_Registration : Form
     {
-
         public Login_Registration()
         {
             InitializeComponent();
@@ -43,19 +42,33 @@ namespace Software_Development_Project
             string passwordC = passwordRegC.Text;
             // Passes the data into the registration back end
             int pass = RegisterBE.register(email, password, passwordC);
-            if (pass == 2)
+            if (pass == 4)
             {
-                // If pass = 2 then registration was successful and the user is notified
+                // If pass = 4 then registration was successful and the user is notified
                 // Swaps from the registration tab to the completion tab
                 LoginTC.Controls.Remove(registerTab);
                 LoginTC.Controls.Add(regcompleteTab);
 
             }
-            else if (pass == 1)
+            else if (pass == 3)
             {
-                // If pass = 1 then the passwords don't match and the user is not allowed entry
+                // If pass = 3 then the passwords don't match and the user is not allowed entry
                 // to the system and is told of the mistake
                 System.Windows.Forms.MessageBox.Show("Passwords do not match");
+            }
+
+            else if (pass == 2)
+            {
+                // If pass = 2 then the password is not at least 8 character long and the user is not allowed entry
+                // to the system and is told of the mistake
+                System.Windows.Forms.MessageBox.Show("Password must be at least 8 characters long");
+            }
+
+            else if (pass == 1)
+            {
+                // If pass = 1 then no password has been entered and the user is not allowed entry
+                // to the system and is told of the mistake
+                System.Windows.Forms.MessageBox.Show("No Password Entered");
             }
 
             else if (pass == 0)
@@ -95,8 +108,17 @@ namespace Software_Development_Project
                 System.Windows.Forms.MessageBox.Show("Username Incorrect");
             }
 
+            else if (pass == 3)
+            {
+                // If pass = 3 then the user has input a blank username and is denied access
+                System.Windows.Forms.MessageBox.Show("Username is blank");
+            }
 
-
+            else if (pass == 4)
+            {
+                // If pass = 4 then the user has input a blank password and is denied access
+                System.Windows.Forms.MessageBox.Show("Password is blank");
+            }
         }
 
         private void completeBtn_Click(object sender, EventArgs e)
@@ -105,16 +127,6 @@ namespace Software_Development_Project
             Visible = false;
             Main_Menu form2 = new Main_Menu();
             form2.Show();
-        }
-
-        private void registerTab_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void registerTab_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

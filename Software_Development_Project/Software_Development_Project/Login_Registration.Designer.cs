@@ -34,8 +34,7 @@ namespace Software_Development_Project
         {
             this.LoginTC = new System.Windows.Forms.TabControl();
             this.regcompleteTab = new System.Windows.Forms.TabPage();
-            this.completionText2 = new System.Windows.Forms.Label();
-            this.completionText = new System.Windows.Forms.Label();
+            this.label_complete = new System.Windows.Forms.Label();
             this.completeBtn = new System.Windows.Forms.Button();
             this.loginTab = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,6 +43,7 @@ namespace Software_Development_Project
             this.loginBtn = new System.Windows.Forms.Button();
             this.swapRegister = new System.Windows.Forms.Button();
             this.registerTab = new System.Windows.Forms.TabPage();
+            this.lable_registration = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.passwordRegC = new System.Windows.Forms.TextBox();
             this.passwordReg = new System.Windows.Forms.TextBox();
@@ -66,11 +66,11 @@ namespace Software_Development_Project
             this.LoginTC.Controls.Add(this.regcompleteTab);
             this.LoginTC.ItemSize = new System.Drawing.Size(0, 1);
             this.LoginTC.Location = new System.Drawing.Point(0, 0);
-            this.LoginTC.Margin = new System.Windows.Forms.Padding(4);
+            this.LoginTC.Margin = new System.Windows.Forms.Padding(2);
             this.LoginTC.Multiline = true;
             this.LoginTC.Name = "LoginTC";
             this.LoginTC.SelectedIndex = 0;
-            this.LoginTC.Size = new System.Drawing.Size(1202, 562);
+            this.LoginTC.Size = new System.Drawing.Size(700, 390);
             this.LoginTC.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.LoginTC.TabIndex = 0;
             this.LoginTC.TabStop = false;
@@ -78,44 +78,34 @@ namespace Software_Development_Project
             // regcompleteTab
             // 
             this.regcompleteTab.BackColor = System.Drawing.Color.Silver;
-            this.regcompleteTab.Controls.Add(this.completionText2);
-            this.regcompleteTab.Controls.Add(this.completionText);
+            this.regcompleteTab.Controls.Add(this.label_complete);
             this.regcompleteTab.Controls.Add(this.completeBtn);
             this.regcompleteTab.Location = new System.Drawing.Point(4, 5);
-            this.regcompleteTab.Margin = new System.Windows.Forms.Padding(4);
+            this.regcompleteTab.Margin = new System.Windows.Forms.Padding(2);
             this.regcompleteTab.Name = "regcompleteTab";
-            this.regcompleteTab.Size = new System.Drawing.Size(1194, 553);
+            this.regcompleteTab.Size = new System.Drawing.Size(692, 381);
             this.regcompleteTab.TabIndex = 2;
             this.regcompleteTab.Text = "Registration";
             // 
-            // completionText2
+            // label_complete
             // 
-            this.completionText2.AutoSize = true;
-            this.completionText2.Location = new System.Drawing.Point(446, 238);
-            this.completionText2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.completionText2.Name = "completionText2";
-            this.completionText2.Size = new System.Drawing.Size(253, 25);
-            this.completionText2.TabIndex = 2;
-            this.completionText2.Text = "Press Button to continue.";
-            // 
-            // completionText
-            // 
-            this.completionText.AutoSize = true;
-            this.completionText.Location = new System.Drawing.Point(446, 198);
-            this.completionText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.completionText.Name = "completionText";
-            this.completionText.Size = new System.Drawing.Size(232, 25);
-            this.completionText.TabIndex = 1;
-            this.completionText.Text = "Registration complete. ";
+            this.label_complete.AutoSize = true;
+            this.label_complete.Location = new System.Drawing.Point(284, 186);
+            this.label_complete.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_complete.Name = "label_complete";
+            this.label_complete.Size = new System.Drawing.Size(126, 26);
+            this.label_complete.TabIndex = 3;
+            this.label_complete.Text = "Registration complete. \r\nPress Button to continue.";
+            this.label_complete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // completeBtn
             // 
             this.completeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(80)))), ((int)(((byte)(145)))));
             this.completeBtn.ForeColor = System.Drawing.Color.White;
-            this.completeBtn.Location = new System.Drawing.Point(1036, 504);
-            this.completeBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.completeBtn.Location = new System.Drawing.Point(604, 342);
+            this.completeBtn.Margin = new System.Windows.Forms.Padding(2);
             this.completeBtn.Name = "completeBtn";
-            this.completeBtn.Size = new System.Drawing.Size(140, 37);
+            this.completeBtn.Size = new System.Drawing.Size(80, 30);
             this.completeBtn.TabIndex = 0;
             this.completeBtn.Text = "Continue";
             this.completeBtn.UseVisualStyleBackColor = false;
@@ -130,50 +120,52 @@ namespace Software_Development_Project
             this.loginTab.Controls.Add(this.loginBtn);
             this.loginTab.Controls.Add(this.swapRegister);
             this.loginTab.Location = new System.Drawing.Point(4, 5);
-            this.loginTab.Margin = new System.Windows.Forms.Padding(4);
+            this.loginTab.Margin = new System.Windows.Forms.Padding(2);
             this.loginTab.Name = "loginTab";
-            this.loginTab.Padding = new System.Windows.Forms.Padding(4);
-            this.loginTab.Size = new System.Drawing.Size(1194, 553);
+            this.loginTab.Padding = new System.Windows.Forms.Padding(2);
+            this.loginTab.Size = new System.Drawing.Size(692, 381);
             this.loginTab.TabIndex = 0;
             this.loginTab.Text = "Login";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Software_Development_Project.Properties.Resources.citisoft;
-            this.pictureBox1.Location = new System.Drawing.Point(372, 65);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(258, 62);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(430, 154);
+            this.pictureBox1.Size = new System.Drawing.Size(201, 76);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // passwordLogin
             // 
-            this.passwordLogin.Location = new System.Drawing.Point(492, 302);
-            this.passwordLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.passwordLogin.Location = new System.Drawing.Point(303, 208);
+            this.passwordLogin.Margin = new System.Windows.Forms.Padding(2);
             this.passwordLogin.Name = "passwordLogin";
             this.passwordLogin.PasswordChar = '*';
-            this.passwordLogin.Size = new System.Drawing.Size(186, 31);
+            this.passwordLogin.Size = new System.Drawing.Size(107, 20);
             this.passwordLogin.TabIndex = 3;
+            this.passwordLogin.Text = "Password";
             // 
             // usernameLogin
             // 
-            this.usernameLogin.Location = new System.Drawing.Point(492, 260);
-            this.usernameLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.usernameLogin.Location = new System.Drawing.Point(303, 179);
+            this.usernameLogin.Margin = new System.Windows.Forms.Padding(2);
             this.usernameLogin.Name = "usernameLogin";
-            this.usernameLogin.Size = new System.Drawing.Size(186, 31);
+            this.usernameLogin.Size = new System.Drawing.Size(107, 20);
             this.usernameLogin.TabIndex = 2;
+            this.usernameLogin.Text = "Username";
             // 
             // loginBtn
             // 
             this.loginBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(191)))), ((int)(((byte)(213)))));
             this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.White;
-            this.loginBtn.Location = new System.Drawing.Point(514, 356);
-            this.loginBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.loginBtn.Location = new System.Drawing.Point(315, 245);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(2);
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(140, 42);
+            this.loginBtn.Size = new System.Drawing.Size(80, 30);
             this.loginBtn.TabIndex = 1;
             this.loginBtn.Text = "Login";
             this.loginBtn.UseVisualStyleBackColor = false;
@@ -183,10 +175,10 @@ namespace Software_Development_Project
             // 
             this.swapRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(80)))), ((int)(((byte)(145)))));
             this.swapRegister.ForeColor = System.Drawing.Color.White;
-            this.swapRegister.Location = new System.Drawing.Point(1036, 498);
-            this.swapRegister.Margin = new System.Windows.Forms.Padding(4);
+            this.swapRegister.Location = new System.Drawing.Point(604, 342);
+            this.swapRegister.Margin = new System.Windows.Forms.Padding(2);
             this.swapRegister.Name = "swapRegister";
-            this.swapRegister.Size = new System.Drawing.Size(140, 42);
+            this.swapRegister.Size = new System.Drawing.Size(80, 30);
             this.swapRegister.TabIndex = 0;
             this.swapRegister.Text = "Register";
             this.swapRegister.UseVisualStyleBackColor = false;
@@ -195,6 +187,7 @@ namespace Software_Development_Project
             // registerTab
             // 
             this.registerTab.BackColor = System.Drawing.Color.Silver;
+            this.registerTab.Controls.Add(this.lable_registration);
             this.registerTab.Controls.Add(this.pictureBox2);
             this.registerTab.Controls.Add(this.passwordRegC);
             this.registerTab.Controls.Add(this.passwordReg);
@@ -202,48 +195,60 @@ namespace Software_Development_Project
             this.registerTab.Controls.Add(this.registerBtn);
             this.registerTab.Controls.Add(this.swapLogin);
             this.registerTab.Location = new System.Drawing.Point(4, 5);
-            this.registerTab.Margin = new System.Windows.Forms.Padding(4);
+            this.registerTab.Margin = new System.Windows.Forms.Padding(2);
             this.registerTab.Name = "registerTab";
-            this.registerTab.Padding = new System.Windows.Forms.Padding(4);
-            this.registerTab.Size = new System.Drawing.Size(1194, 553);
+            this.registerTab.Padding = new System.Windows.Forms.Padding(2);
+            this.registerTab.Size = new System.Drawing.Size(692, 381);
             this.registerTab.TabIndex = 1;
             this.registerTab.Text = "Register";
-            this.registerTab.Click += new System.EventHandler(this.registerTab_Click_1);
+            // 
+            // lable_registration
+            // 
+            this.lable_registration.AutoSize = true;
+            this.lable_registration.Location = new System.Drawing.Point(233, 90);
+            this.lable_registration.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lable_registration.Name = "lable_registration";
+            this.lable_registration.Size = new System.Drawing.Size(264, 52);
+            this.lable_registration.TabIndex = 6;
+            this.lable_registration.Text = "Welcome to the CitiSoft registration page\r\n\r\nPlease enter your E-Mail and type yo" +
+    "ur password twice\r\ninto the different textboxes below\r\n";
+            this.lable_registration.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Software_Development_Project.Properties.Resources.citisoft;
-            this.pictureBox2.Location = new System.Drawing.Point(7, 7);
+            this.pictureBox2.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(248, 68);
+            this.pictureBox2.Size = new System.Drawing.Size(135, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
             // passwordRegC
             // 
-            this.passwordRegC.Location = new System.Drawing.Point(490, 274);
-            this.passwordRegC.Margin = new System.Windows.Forms.Padding(4);
+            this.passwordRegC.Location = new System.Drawing.Point(310, 212);
+            this.passwordRegC.Margin = new System.Windows.Forms.Padding(2);
             this.passwordRegC.Name = "passwordRegC";
             this.passwordRegC.PasswordChar = '*';
-            this.passwordRegC.Size = new System.Drawing.Size(186, 31);
+            this.passwordRegC.Size = new System.Drawing.Size(95, 20);
             this.passwordRegC.TabIndex = 4;
             // 
             // passwordReg
             // 
-            this.passwordReg.Location = new System.Drawing.Point(490, 233);
-            this.passwordReg.Margin = new System.Windows.Forms.Padding(4);
+            this.passwordReg.Location = new System.Drawing.Point(310, 184);
+            this.passwordReg.Margin = new System.Windows.Forms.Padding(2);
             this.passwordReg.Name = "passwordReg";
             this.passwordReg.PasswordChar = '*';
-            this.passwordReg.Size = new System.Drawing.Size(186, 31);
+            this.passwordReg.Size = new System.Drawing.Size(95, 20);
             this.passwordReg.TabIndex = 3;
             // 
             // emailReg
             // 
-            this.emailReg.Location = new System.Drawing.Point(490, 193);
-            this.emailReg.Margin = new System.Windows.Forms.Padding(4);
+            this.emailReg.Location = new System.Drawing.Point(310, 156);
+            this.emailReg.Margin = new System.Windows.Forms.Padding(2);
             this.emailReg.Name = "emailReg";
-            this.emailReg.Size = new System.Drawing.Size(186, 31);
+            this.emailReg.Size = new System.Drawing.Size(95, 20);
             this.emailReg.TabIndex = 2;
             // 
             // registerBtn
@@ -251,10 +256,10 @@ namespace Software_Development_Project
             this.registerBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(191)))), ((int)(((byte)(213)))));
             this.registerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerBtn.ForeColor = System.Drawing.Color.White;
-            this.registerBtn.Location = new System.Drawing.Point(512, 316);
-            this.registerBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.registerBtn.Location = new System.Drawing.Point(315, 245);
+            this.registerBtn.Margin = new System.Windows.Forms.Padding(2);
             this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(140, 40);
+            this.registerBtn.Size = new System.Drawing.Size(80, 30);
             this.registerBtn.TabIndex = 1;
             this.registerBtn.Text = "Register";
             this.registerBtn.UseVisualStyleBackColor = false;
@@ -264,10 +269,10 @@ namespace Software_Development_Project
             // 
             this.swapLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(80)))), ((int)(((byte)(145)))));
             this.swapLogin.ForeColor = System.Drawing.Color.White;
-            this.swapLogin.Location = new System.Drawing.Point(1036, 502);
-            this.swapLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.swapLogin.Location = new System.Drawing.Point(604, 342);
+            this.swapLogin.Margin = new System.Windows.Forms.Padding(2);
             this.swapLogin.Name = "swapLogin";
-            this.swapLogin.Size = new System.Drawing.Size(140, 40);
+            this.swapLogin.Size = new System.Drawing.Size(80, 30);
             this.swapLogin.TabIndex = 0;
             this.swapLogin.Text = "Login";
             this.swapLogin.UseVisualStyleBackColor = false;
@@ -275,12 +280,12 @@ namespace Software_Development_Project
             // 
             // Login_Registration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1202, 562);
+            this.ClientSize = new System.Drawing.Size(700, 388);
             this.Controls.Add(this.LoginTC);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login_Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.LoginTC.ResumeLayout(false);
@@ -300,15 +305,12 @@ namespace Software_Development_Project
 
         private TabControl LoginTC;
         private TabPage regcompleteTab;
-        private Label completionText;
         private Button completeBtn;
-        private Label completionText2;
         private TabPage loginTab;
         private TextBox passwordLogin;
         private TextBox usernameLogin;
         private Button loginBtn;
         private Button swapRegister;
-        private TabPage registerTab;
         private TextBox passwordRegC;
         private TextBox passwordReg;
         private TextBox emailReg;
@@ -316,6 +318,9 @@ namespace Software_Development_Project
         private Button swapLogin;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private TabPage registerTab;
+        private Label lable_registration;
+        private Label label_complete;
     }
 }
 

@@ -28,9 +28,11 @@ namespace Software_Development_Project
 
         public static void editDB(string username, string newpassword, string newuserpriv)
         {
-            DBConnection dbConn = DBConnection.getInstanceofDBConnection();
-            dbConn.editDB("SELECT * FROM Login_Table WHERE Username ='" + username + "'", newpassword, newuserpriv);
-
+            if (username != "")
+            {
+                DBConnection dbConn = DBConnection.getInstanceofDBConnection();
+                dbConn.editDB("SELECT * FROM Login_Table WHERE Username ='" + username + "'", newpassword, newuserpriv);
+            }
         }
     }
 }

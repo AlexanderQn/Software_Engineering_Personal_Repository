@@ -26,14 +26,23 @@ namespace Software_Development_Project
                 // If the email is in the correct format then the first check is passed
                 pass++;
             }
-
-            if (password == passwordC && pass == 1)
+            if (password != "" &&  pass == 1)
+            {
+                // If password is present in the field
+                pass++;
+            }
+            if (password.Length > 7 && pass == 2)
+            {
+                // If password is at least 8 characters
+                pass++;
+            }
+            if (password == passwordC && pass == 3)
             {
                 // If the passwords match then the second check is passed
                 pass++;
             }
 
-            if (pass == 2)
+            if (pass == 4)
             {
                 // If both checks are passed the data is readied to be put in the database
                 // the email is split into parts becoming both the username and the user priverlage 

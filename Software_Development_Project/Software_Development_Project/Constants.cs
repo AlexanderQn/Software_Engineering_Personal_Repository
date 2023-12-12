@@ -10,15 +10,13 @@ namespace Software_Development_Project
 {
     internal class Constants
     {
+
+        //Main Menu Constants
         //Filter, Categories Names
         public static string ProductFilters = "Product Filters";
          
-        public static string ProductCategories = "Product Categories";
-        
         public static string VendorFilters = "Vendor Filters";
         
-        public static string VendorCategories = "Vendor Categories";
-
         //SHOWPREVIEWPRODUCTS: A products preview of selected attributes displayed in the MainMenuedvg Datagrid
         public static string SHOWPREVIEWPRODUCTS = "SELECT Products_Table.Product_Name as 'Product Name', " +
                                                     "Products_Table.Product_Type as 'Type', " +
@@ -150,6 +148,32 @@ namespace Software_Development_Project
 
         //representative SQL statement is showing products in wrongly order no concept for a proper few.
         public static string COMPANYOldestFirst = " ORDER BY Companies_Table.Company_Added DESC";
+
+        //frmCategoires Constants
+        
+        //byte shows which category was selected
+        public static byte categoryState;
+
+        //saves the selected category into a string
+        public static string selectedCategory;
+
+        public static string ProductTypes = "Product Types";
+
+        public static string Modules = "Modules";
+
+        public static string ClientTypes = "Client Types";
+
+        public static string DISTINCTProductTypes = "SELECT DISTINCT Products_Table.Product_Type as 'Type' FROM Products_Table";
+
+        public static string DISTINCTModules = "SELECT DISTINCT Modules_Table.Module as 'Module' FROM Modules_Table";
+
+        public static string DISTINCTClientTypes = "SELECT DISTINCT Financial_Services_Client_Types_Table.Financial_Service_Client_Typ as 'Client Type' FROM Financial_Services_Client_Types_Table";
+
+        public static string ProductTypeLIKE = " WHERE Products_Table.Product_Type LIKE '%";
+
+        public static string ModuleLIKE = " WHERE Modules_Table.Module LIKE '%";
+
+        public static string ClientTypLIKE = " WHERE Financial_Services_Client_Types_Table.Financial_Service_Client_Typ LIKE '%";
 
 
         public static string SELECTALL = "SELECT * FROM Products_Table";

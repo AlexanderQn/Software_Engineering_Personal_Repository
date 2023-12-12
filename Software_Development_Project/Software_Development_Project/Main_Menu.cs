@@ -68,7 +68,6 @@ namespace Software_Development_Project
 
             //"label.Text" renaming Labels so they fit in which view (product-view/vendor-view)
             label_Filter.Text = Constants.ProductFilters;
-            label_Categories.Text = Constants.ProductCategories;
 
             //"unselectButtons();" makes sure buttons are being freshly selectable after changing view.
             unselectButtons();
@@ -76,6 +75,9 @@ namespace Software_Development_Project
             //"radioButton_search.Checked" makes sure the searchbar is in right mod and connected to the the current selected view (product-view/vendor-view)
             radioButton_searchVendors.Checked = false;
             radioButton_searchProducts.Checked = true;
+
+            //makes the categories panel visible
+            panel_Categories.Visible = true;
         }
 
         private void button_ViewVendors_Click(object sender, EventArgs e)
@@ -97,7 +99,6 @@ namespace Software_Development_Project
 
             //"label.Text" changing labels for vendor mode
             label_Filter.Text = Constants.VendorFilters;
-            label_Categories.Text = Constants.VendorCategories;
 
             //"unselectButtons();" makes sure buttons are being freshly selectable after changing view.
             unselectButtons();
@@ -105,6 +106,9 @@ namespace Software_Development_Project
             //Searchbar is in vendor-view 
             radioButton_searchVendors.Checked = true;
             radioButton_searchProducts.Checked = false;
+
+            //hides the categories panel
+            panel_Categories.Visible = false;
         }
 
         //Filters
@@ -338,6 +342,85 @@ namespace Software_Development_Project
             }
         }
 
+        //Categories
+
+        public void button_SelectCategories_Click(object sender, EventArgs e)
+        {
+
+            //ShowDialog keeps the new opened form in focus
+
+            frmCategories form2 = new frmCategories();
+            form2.Show();
+            //looking at values to check which category the user selected
+            if (radioButton_businessAreas.Checked == true)
+            {
+                //changing the state to show another category class
+                Constants.categoryState = 0;
+            }
+            else if (radioButton_modules.Checked == true)
+            {
+                Constants.categoryState = 1;
+            }
+            else if (radioButton_clientTypes.Checked == true)
+            {
+                Constants.categoryState = 2;
+            }
+            else
+            {
+                form2.Close();
+                System.Windows.Forms.MessageBox.Show("Please select a category");
+            }
+        }
+        private void button_categoriesSearch_Click(object sender, EventArgs e)
+        {
+            DBConnection dbConn = DBConnection.getInstanceofDBConnection();
+            DataSet dataset;
+
+            //different searches with different SQL statments
+            if (radioButton_businessAreas.Checked == true)
+            {
+                dataset = dbConn.getDataSet(Constants.SHOWPREVIEWPRODUCTS + Constants.ProductTypeLIKE + Constants.selectedCategory + Constants.EndPrecent);    
+                MainMenuedvg.DataSource = dataset.Tables[0];
+            }
+            else if (radioButton_modules.Checked == true)
+            {
+                dataset = dbConn.getDataSet(Constants.SHOWPREVIEWPRODUCTS + Constants.SEARCHVIEWPRODUCTSJOIN + Constants.ModuleLIKE + Constants.selectedCategory + Constants.EndPrecent);
+                MainMenuedvg.DataSource = dataset.Tables[0];
+            }
+            else if (radioButton_clientTypes.Checked == true)
+            {
+                dataset = dbConn.getDataSet(Constants.SHOWPREVIEWPRODUCTS + Constants.SEARCHVIEWPRODUCTSJOIN + Constants.ClientTypLIKE + Constants.selectedCategory + Constants.EndPrecent);
+                MainMenuedvg.DataSource = dataset.Tables[0];
+            }
+            MainMenuedvg.Columns[6].Visible = false;
+        }
+
+        //function to insure the Buttons are getting unselected
+        private void unselectButtons()
+        {
+            //This function makes it possible to reselect the different filters after switching from the vendor to product an vice versa
+            //Without unselecting the buttons another one has to be select first and then the wanted one again.
+            radioButton_Popularity.Checked = false;
+            radioButton_BestRating.Checked = false;
+            radioButton_AZ.Checked = false;
+            radioButton_ZA.Checked = false;
+            radioButton_NewestFirst.Checked = false;
+            radioButton_OldestFirst.Checked = false;
+            radioButton_businessAreas.Checked = false;
+            radioButton_modules.Checked = false;
+            radioButton_clientTypes.Checked = false;
+        }
+
+        //Logout function
+        private void button_Logout_Click(object sender, EventArgs e)
+        {
+            {
+                Visible = false;
+                Login_Registration form = new Login_Registration();
+                form.Visible = true;
+            }
+        }
+
         //function for frmVendors new Window with more information
         private void MainMenuedvg_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -379,43 +462,28 @@ namespace Software_Development_Project
             }
         }
 
-        //function to insure the Buttons are getting unselected
-        private void unselectButtons()
-        {
-            //This function makes it possible to reselect the different filters after switching from the vendor to product an vice versa
-            //Without unselecting the buttons another one has to be select first and then the wanted one again.
-            radioButton_Popularity.Checked = false;
-            radioButton_BestRating.Checked = false;
-            radioButton_AZ.Checked = false;
-            radioButton_ZA.Checked = false;
-            radioButton_NewestFirst.Checked = false;
-            radioButton_OldestFirst.Checked = false;
-            radioButton_FullMatch.Checked = false;
-            radioButton_PartialMatch.Checked = false;
-        }
-
         private void adminBtn_Click(object sender, EventArgs e)
         {
             Admin_Form form2 = new Admin_Form();
-            form2.Show();
+            form2.ShowDialog();
         }
 
         private void editBtn_Click(object sender, EventArgs e)
         {
             editDBForm form2 = new editDBForm();
-            form2.Show();
+            form2.ShowDialog();
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
             Insert_Delete form2 = new Insert_Delete();
-            form2.Show();
+            form2.ShowDialog();
         }
 
         private void insertBtn_Click(object sender, EventArgs e)
         {
             Insert_Delete form2 = new Insert_Delete();
-            form2.Show();
+            form2.ShowDialog();
         }
     }
 }

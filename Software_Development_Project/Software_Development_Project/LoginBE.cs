@@ -21,6 +21,20 @@ namespace Software_Development_Project
             bool passCheck;
             string userpriv;
 
+            if (username == "")
+            {
+                // If username is blank pss = 3 is returned
+                pass = 3;
+                return pass;
+            }
+
+            else if (password == "")
+            {
+                // If password is blank pss = 3 is returned
+                pass = 4;
+                return pass;
+            }
+
             // The database class is called and the data is passed in as well as the SQL query
             DBConnection dbConn = DBConnection.getInstanceofDBConnection();
             userCheck = dbConn.DBcheck("SELECT Username FROM Login_Table WHERE Username = '" + username + "'", username, dummy);

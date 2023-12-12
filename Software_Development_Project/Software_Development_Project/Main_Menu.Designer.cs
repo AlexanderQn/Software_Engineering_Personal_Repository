@@ -30,6 +30,7 @@ namespace Software_Development_Project
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.PictureBox pictureBox1;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -37,8 +38,9 @@ namespace Software_Development_Project
             this.MainMenuedvg = new System.Windows.Forms.DataGridView();
             this.button_ViewVendors = new System.Windows.Forms.Button();
             this.panel_Categories = new System.Windows.Forms.Panel();
-            this.radioButton_PartialMatch = new System.Windows.Forms.RadioButton();
-            this.radioButton_FullMatch = new System.Windows.Forms.RadioButton();
+            this.radioButton_clientTypes = new System.Windows.Forms.RadioButton();
+            this.radioButton_modules = new System.Windows.Forms.RadioButton();
+            this.radioButton_businessAreas = new System.Windows.Forms.RadioButton();
             this.button_SelectCategories = new System.Windows.Forms.Button();
             this.label_Categories = new System.Windows.Forms.Label();
             this.panel_Filter = new System.Windows.Forms.Panel();
@@ -60,12 +62,29 @@ namespace Software_Development_Project
             this.deleteBtn = new System.Windows.Forms.Button();
             this.editBtn = new System.Windows.Forms.Button();
             this.adminBtn = new System.Windows.Forms.Button();
+            this.button_Logout = new System.Windows.Forms.Button();
+            this.button_categoriesSearch = new System.Windows.Forms.Button();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainMenuedvg)).BeginInit();
             this.panel_Categories.SuspendLayout();
             this.panel_Filter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).BeginInit();
             this.panel_search.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            pictureBox1.Enabled = false;
+            pictureBox1.Image = global::Software_Development_Project.Properties.Resources.Logout;
+            pictureBox1.Location = new System.Drawing.Point(982, 543);
+            pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(28, 27);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 20;
+            pictureBox1.TabStop = false;
             // 
             // MainMenuedvg
             // 
@@ -106,7 +125,7 @@ namespace Software_Development_Project
             this.MainMenuedvg.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(191)))), ((int)(((byte)(213)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.WindowText;
@@ -134,56 +153,70 @@ namespace Software_Development_Project
             // 
             this.panel_Categories.BackColor = System.Drawing.SystemColors.HighlightText;
             this.panel_Categories.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_Categories.Controls.Add(this.radioButton_PartialMatch);
-            this.panel_Categories.Controls.Add(this.radioButton_FullMatch);
+            this.panel_Categories.Controls.Add(this.button_categoriesSearch);
+            this.panel_Categories.Controls.Add(this.radioButton_clientTypes);
+            this.panel_Categories.Controls.Add(this.radioButton_modules);
+            this.panel_Categories.Controls.Add(this.radioButton_businessAreas);
             this.panel_Categories.Controls.Add(this.button_SelectCategories);
             this.panel_Categories.Controls.Add(this.label_Categories);
             this.panel_Categories.Location = new System.Drawing.Point(24, 367);
             this.panel_Categories.Margin = new System.Windows.Forms.Padding(2);
             this.panel_Categories.Name = "panel_Categories";
-            this.panel_Categories.Size = new System.Drawing.Size(164, 149);
+            this.panel_Categories.Size = new System.Drawing.Size(164, 169);
             this.panel_Categories.TabIndex = 9;
             // 
-            // radioButton_PartialMatch
+            // radioButton_clientTypes
             // 
-            this.radioButton_PartialMatch.AutoSize = true;
-            this.radioButton_PartialMatch.Location = new System.Drawing.Point(42, 116);
-            this.radioButton_PartialMatch.Name = "radioButton_PartialMatch";
-            this.radioButton_PartialMatch.Size = new System.Drawing.Size(87, 17);
-            this.radioButton_PartialMatch.TabIndex = 8;
-            this.radioButton_PartialMatch.TabStop = true;
-            this.radioButton_PartialMatch.Text = "Partial Match";
-            this.radioButton_PartialMatch.UseVisualStyleBackColor = true;
+            this.radioButton_clientTypes.AutoSize = true;
+            this.radioButton_clientTypes.Location = new System.Drawing.Point(42, 121);
+            this.radioButton_clientTypes.Name = "radioButton_clientTypes";
+            this.radioButton_clientTypes.Size = new System.Drawing.Size(83, 17);
+            this.radioButton_clientTypes.TabIndex = 9;
+            this.radioButton_clientTypes.TabStop = true;
+            this.radioButton_clientTypes.Text = "Client Types";
+            this.radioButton_clientTypes.UseVisualStyleBackColor = true;
             // 
-            // radioButton_FullMatch
+            // radioButton_modules
             // 
-            this.radioButton_FullMatch.AutoSize = true;
-            this.radioButton_FullMatch.Location = new System.Drawing.Point(42, 93);
-            this.radioButton_FullMatch.Name = "radioButton_FullMatch";
-            this.radioButton_FullMatch.Size = new System.Drawing.Size(74, 17);
-            this.radioButton_FullMatch.TabIndex = 7;
-            this.radioButton_FullMatch.TabStop = true;
-            this.radioButton_FullMatch.Text = "Full Match";
-            this.radioButton_FullMatch.UseVisualStyleBackColor = true;
+            this.radioButton_modules.AutoSize = true;
+            this.radioButton_modules.Location = new System.Drawing.Point(42, 98);
+            this.radioButton_modules.Name = "radioButton_modules";
+            this.radioButton_modules.Size = new System.Drawing.Size(65, 17);
+            this.radioButton_modules.TabIndex = 8;
+            this.radioButton_modules.TabStop = true;
+            this.radioButton_modules.Text = "Modules";
+            this.radioButton_modules.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_businessAreas
+            // 
+            this.radioButton_businessAreas.AutoSize = true;
+            this.radioButton_businessAreas.Location = new System.Drawing.Point(42, 75);
+            this.radioButton_businessAreas.Name = "radioButton_businessAreas";
+            this.radioButton_businessAreas.Size = new System.Drawing.Size(97, 17);
+            this.radioButton_businessAreas.TabIndex = 7;
+            this.radioButton_businessAreas.TabStop = true;
+            this.radioButton_businessAreas.Text = "Business Areas";
+            this.radioButton_businessAreas.UseVisualStyleBackColor = true;
             // 
             // button_SelectCategories
             // 
             this.button_SelectCategories.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_SelectCategories.Location = new System.Drawing.Point(14, 44);
+            this.button_SelectCategories.Location = new System.Drawing.Point(15, 35);
             this.button_SelectCategories.Name = "button_SelectCategories";
             this.button_SelectCategories.Size = new System.Drawing.Size(132, 34);
             this.button_SelectCategories.TabIndex = 6;
             this.button_SelectCategories.Text = "Select Categories";
             this.button_SelectCategories.UseVisualStyleBackColor = false;
+            this.button_SelectCategories.Click += new System.EventHandler(this.button_SelectCategories_Click);
             // 
             // label_Categories
             // 
             this.label_Categories.AutoSize = true;
             this.label_Categories.Location = new System.Drawing.Point(12, 16);
             this.label_Categories.Name = "label_Categories";
-            this.label_Categories.Size = new System.Drawing.Size(57, 13);
+            this.label_Categories.Size = new System.Drawing.Size(97, 13);
             this.label_Categories.TabIndex = 5;
-            this.label_Categories.Text = "Categories";
+            this.label_Categories.Text = "Product Categories";
             // 
             // panel_Filter
             // 
@@ -406,12 +439,36 @@ namespace Software_Development_Project
             this.adminBtn.UseVisualStyleBackColor = false;
             this.adminBtn.Click += new System.EventHandler(this.adminBtn_Click);
             // 
+            // button_Logout
+            // 
+            this.button_Logout.Location = new System.Drawing.Point(966, 527);
+            this.button_Logout.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Logout.Name = "button_Logout";
+            this.button_Logout.Size = new System.Drawing.Size(61, 48);
+            this.button_Logout.TabIndex = 19;
+            this.button_Logout.Text = "Logout";
+            this.button_Logout.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button_Logout.UseVisualStyleBackColor = true;
+            this.button_Logout.Click += new System.EventHandler(this.button_Logout_Click);
+            // 
+            // button_categoriesSearch
+            // 
+            this.button_categoriesSearch.Location = new System.Drawing.Point(51, 141);
+            this.button_categoriesSearch.Name = "button_categoriesSearch";
+            this.button_categoriesSearch.Size = new System.Drawing.Size(62, 23);
+            this.button_categoriesSearch.TabIndex = 10;
+            this.button_categoriesSearch.Text = "GO";
+            this.button_categoriesSearch.UseVisualStyleBackColor = true;
+            this.button_categoriesSearch.Click += new System.EventHandler(this.button_categoriesSearch_Click);
+            // 
             // Main_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1044, 597);
+            this.ClientSize = new System.Drawing.Size(1045, 591);
+            this.Controls.Add(pictureBox1);
+            this.Controls.Add(this.button_Logout);
             this.Controls.Add(this.adminBtn);
             this.Controls.Add(this.editBtn);
             this.Controls.Add(this.deleteBtn);
@@ -429,6 +486,7 @@ namespace Software_Development_Project
             this.Name = "Main_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Citisoft ";
+            ((System.ComponentModel.ISupportInitialize)(pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainMenuedvg)).EndInit();
             this.panel_Categories.ResumeLayout(false);
             this.panel_Categories.PerformLayout();
@@ -447,8 +505,8 @@ namespace Software_Development_Project
         private System.Windows.Forms.DataGridView MainMenuedvg;
         private System.Windows.Forms.Button button_ViewVendors;
         private System.Windows.Forms.Panel panel_Categories;
-        private System.Windows.Forms.RadioButton radioButton_PartialMatch;
-        private System.Windows.Forms.RadioButton radioButton_FullMatch;
+        private System.Windows.Forms.RadioButton radioButton_modules;
+        private System.Windows.Forms.RadioButton radioButton_businessAreas;
         private System.Windows.Forms.Button button_SelectCategories;
         private System.Windows.Forms.Label label_Categories;
         private System.Windows.Forms.Panel panel_Filter;
@@ -470,6 +528,9 @@ namespace Software_Development_Project
         private System.Windows.Forms.Button deleteBtn;
         private System.Windows.Forms.Button editBtn;
         private System.Windows.Forms.Button adminBtn;
+        private System.Windows.Forms.Button button_Logout;
+        private System.Windows.Forms.RadioButton radioButton_clientTypes;
+        private System.Windows.Forms.Button button_categoriesSearch;
     }
 }
 
